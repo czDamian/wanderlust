@@ -4,7 +4,7 @@ WanderLust is a modern, premium travel companion application built with Next.js 
 
 ## Features
 
--   **Curated Destinations**: Explore a list of hand-picked, stunning travel locations.
+-   **Dynamic Destinations**: Fetches real-time country data from the [RestCountries API](https://restcountries.com/) combined with curated high-quality imagery.
 -   **Premium UI**: Experience a visually immersive interface with glassmorphism, smooth animations, and a dark-themed aesthetic.
 -   **One-Click Planning**: Instantly add trip details (dates, location, description) to your Google Calendar with a single click.
 -   **Responsive Design**: Optimized for all devices, from desktops to mobile phones.

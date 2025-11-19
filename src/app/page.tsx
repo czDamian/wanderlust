@@ -1,8 +1,10 @@
-import { destinations } from '@/data/destinations';
 import DestinationGrid from '@/components/DestinationGrid';
 import { FaPlaneDeparture } from 'react-icons/fa';
+import { fetchDestinations } from '@/lib/api';
 
-export default function Home() {
+export default async function Home() {
+  const destinations = await fetchDestinations();
+
   return (
     <main className="min-h-screen bg-[#0f172a] text-white relative overflow-hidden">
       {/* Background Gradients */}
@@ -20,7 +22,7 @@ export default function Home() {
               Discover Your Next Adventure
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white via-gray-200 to-gray-400 mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400 mb-6 tracking-tight">
             WanderLust
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
